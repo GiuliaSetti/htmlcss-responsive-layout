@@ -125,3 +125,30 @@ h3{
 
     font-weight: bold;
 }
+
+/* /////////seconda sezione ////////// */
+
+.secondsection{
+    flex-flow: row wrap;
+
+    padding: 2em;
+
+    background-color: rgb(201, 143, 255);
+}
+
+.white{
+    color: white;
+}
+
+.whiteback{
+    background-color: white;
+}
+.whiteback .card-content p{
+    padding: 1em 0;
+}
+.arrow{
+    background-color: rgb(201, 143, 255);
+
+    padding: 0.5em 0.7em;
+    border-radius: 50%;
+}
