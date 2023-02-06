@@ -152,3 +152,25 @@ h3{
     padding: 0.5em 0.7em;
     border-radius: 50%;
 }
+
+
+/* /////terza sezione////////// */
+
+
+.thirdsection{
+    flex-flow: row wrap;
+}
+
+
+.test-title{
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.real-title{
+    color: rgb(201, 143, 255);
+}
+
+.purplish{
+    background-color: rgb(201, 143, 255);
+}
