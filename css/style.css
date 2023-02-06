@@ -3,3 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.debug *{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ____________generali_______________ */
+
+
+.container{
+    margin: 0 auto; 
+}
+
+ul{
+    list-style-type: none;
+}
+
+.flex{
+    display: flex;
+}
+
+/* ************NAVBAR************** */
+
+
+.fixed-nav{
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 0.5em 1em;
+    background-color: deepskyblue;
+    color: white;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_barmenu {
+    font-size: 2em;
+}
+
+.fixed-nav ul{
+    display: none;
+}
