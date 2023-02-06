@@ -23,6 +23,22 @@ ul{
     display: flex;
 }
 
+button{
+    border: transparent;
+    border-radius: 2em;
+    padding: 0.8em 2em;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+h3{
+    padding: 1em 0;
+}
+
+
 /* ************NAVBAR************** */
 
 
@@ -44,4 +60,68 @@ ul{
 
 .fixed-nav ul{
     display: none;
+}
+
+
+/* **************MAIN************* */
+
+/* prima sezione */
+
+.firstsection{
+    flex-flow: row wrap;
+}
+
+
+.card{
+    border-radius: 2em;
+    padding: 1em;
+    margin: 1em 1em;
+}
+
+
+.lightblue{
+    background-color: rgb(185, 238, 255);
+}
+
+.main-content{
+    flex-flow: column wrap;
+    padding: 1em 0;
+    align-items: center;
+}
+
+.card-content{
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em 0;
+}
+
+.text{
+    padding: 1em 0;
+
+    color: rgb(81, 81, 81);
+    font-weight: bold;
+
+    font-size: 0.8em;
+
+    line-height: 1.4em;
+}
+
+.lightblue .card-content h3{
+    color: deepskyblue;
+}
+
+
+.card-content > i{
+    font-size: 4em;
+    padding: 0.3em 0;
+    color: deepskyblue;
+}
+
+.appstore{
+    background-color: deepskyblue;
+    color: white;
+
+    font-weight: bold;
 }
