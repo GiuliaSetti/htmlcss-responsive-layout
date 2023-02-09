@@ -5,14 +5,16 @@
 }
 
 .debug *{
+
+    outline: 1px purple solid;
     font-family: 'Open Sans', sans-serif;
 }
 
 /* ____________generali_______________ */
 
-
-.container{
-    margin: 0 auto; 
+#ui{
+    width: 100vw;
+    height: 100vh;
 }
 
 ul{
@@ -23,154 +25,76 @@ ul{
     display: flex;
 }
 
-button{
-    border: transparent;
-    border-radius: 2em;
-    padding: 0.8em 2em;
+/* per desktop */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+a{
+    text-decoration: none;
 }
 
 img{
-    width: 100%;
     display: block;
 }
 
-h3{
-    padding: 1em 0;
+button{
+    border: transparent;
+    border-radius: 20px;
 }
 
+/* ***************NAVBAR************** */
 
-/* ************NAVBAR************** */
 
-
-.fixed-nav{
-    width: 100%;
-    margin: 0 auto;
-
-    padding: 0.5em 1em;
+/* general_header */
+header{
     background-color: deepskyblue;
     color: white;
+    padding: 1rem 0.5rem;
+}
 
+header .container{
     justify-content: space-between;
     align-items: center;
 }
 
-.nav_barmenu {
-    font-size: 2em;
+
+/* links */
+
+.menu_list ul {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
 }
 
-.fixed-nav ul{
+.menu_list{
     display: none;
 }
 
 
-/* **************MAIN************* */
-
-/* prima sezione */
-
-.firstsection{
-    flex-flow: row wrap;
+.menu_list ul button{
+    padding: 8px 15px;
 }
 
 
-.card{
-    border-radius: 2em;
-    padding: 1em;
-    margin: 1em 1em;
-}
-
-
-.lightblue{
-    background-color: rgb(185, 238, 255);
-}
-
-.main-content{
-    flex-flow: column wrap;
-    padding: 1em 0;
-    align-items: center;
-}
-
-.card-content{
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 1em 0;
-}
-
-.text{
-    padding: 1em 0;
-
-    color: rgb(81, 81, 81);
-    font-weight: bold;
-
-    font-size: 0.8em;
-
-    line-height: 1.4em;
-}
-
-.lightblue .card-content h3{
-    color: deepskyblue;
-}
-
-
-.card-content > i{
-    font-size: 4em;
-    padding: 0.3em 0;
-    color: deepskyblue;
-}
-
-.appstore{
-    background-color: deepskyblue;
-    color: white;
-
-    font-weight: bold;
-}
-
-/* /////////seconda sezione ////////// */
-
-.secondsection{
-    flex-flow: row wrap;
-
-    padding: 2em;
-
-    background-color: rgb(201, 143, 255);
-}
-
-.white{
+.menu_list ul li a{
     color: white;
 }
 
-.whiteback{
-    background-color: white;
-}
-.whiteback .card-content p{
-    padding: 1em 0;
-}
-.arrow{
-    background-color: rgb(201, 143, 255);
-
-    padding: 0.5em 0.7em;
-    border-radius: 50%;
+.menu_bars{
+    font-size: 2em;
 }
 
+@media screen and (min-width:768px){
+    .menu_bars{
+        display: none;
+    }
 
-/* /////terza sezione////////// */
+    .menu_list{
+        display: block;
+    }
 
-
-.thirdsection{
-    flex-flow: row wrap;
-}
-
-
-.test-title{
-    padding: 4em 2em;
-    text-align: center;
-}
-
-.real-title{
-    color: rgb(201, 143, 255);
-}
-
-.purplish{
-    background-color: rgb(201, 143, 255);
 }

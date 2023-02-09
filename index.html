@@ -13,290 +13,57 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   
-
 
     <title>App</title>
 </head>
 
 <body class="debug">
 
-    <!-- header -->
 
 
-    <header>
-        <!-- nav -->
+<!-- header****************************** -->
+        <header>
 
-        <nav>
+            <nav class="flex container">
 
-            <div class="container fixed-nav flex">
-
-                <!-- logo -->
-                <div id="nav_logo">
-                    <img src="img/logo.png" alt="applogo">
+                <!-- LOGO -->
+                <div class="app_logo">
+                    <img src="img/logo.png" alt="app_logo">
                 </div>
-                
 
 
-                <!-- ********navbar desktop******** -->
-                <div class="navbar-links">
-                    <ul>
+                <!-- MENU DESKTOP -->
+                <div class="menu_list">
+                    <ul class="flex">
 
-                        <li><a href="#">Planning</a></li>
-                        <li><a href="#">Testimonial</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">About us</a></li>
                         <li>
-                            <button class="get-started">
-                                Get Started
-                            </button>
+                            <a href="#">Planning</a>
                         </li>
+                        <li>
+                            <a href="#">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li><button class="btn">Get Started</button></li>
 
                     </ul>
                 </div>
 
-                <!-- menu a barre -->
-                
-                <div class="nav_barmenu">
-                    <i class="fa fa-bars"></i>
+                <!-- MENU RESPONSIVE -->  
+                <div class="menu_bars">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
 
-            </div>
+            </nav>
+        
+        </header>
 
 
 
-
-
-
-
-
-
-        </nav>
-
-        <!-- /nav -->
-
-
-    </header>
-
-    <!-- /header -->
-
-    <!-- __________________________________ -->
-
-
-    <!-- main -->
-
-
-    <main>
-
-
-        <!-- prima sezione -->
-
-        <section class="container firstsection flex">
-
-            <!-- carte blu -->
-
-            <!-- prima -->
-
-            <div class="card lightblue">
-                <div class="main-content flex">
-                    <div class="card-content flex">
-                        <h3>Get a demo application</h3>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui nobis natus vero minus iste, tempora maiores rerum ab libero, optio sunt quo perspiciatis magni ipsam? Pariatur inventore facilis harum.
-                        </p>
-                        <button class="appstore">
-                            <i class="fa-brands fa-apple"></i>
-                            App Store
-                        </button>
-                    </div>
-                    <div class="image-phone">
-                        <img src="img/phone.png" alt="phoneimg">
-                    </div>
-                </div>
-            </div>
-
-            <!-- seconda -->
-
-            <div class="card lightblue">
-                <div class="card-content flex">
-                    <i class="fa-solid fa-file-lines"></i>
-                    <h3>Clean Code</h3>
-                    <p class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui cupiditate omnis modi necessitatibus. Expedita, nulla sed. Minima, quis maxime? Et fugit tempora asperiores facere ea quam, dolor rem reiciendis.
-                    </p>
-                </div>
-            </div>
-
-            <!-- terza -->
-
-            <div class="card lightblue">
-                <div class="card-content flex">
-                    <i class="fa-solid fa-compass-drafting"></i>
-                    <h3>Web Design</h3>
-                    <p class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui cupiditate omnis modi necessitatibus. Expedita, nulla sed. Minima, quis maxime? Et fugit tempora asperiores facere ea quam, dolor rem reiciendis.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card lightblue">
-                <div class="card-content flex">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Development</h3>
-                    <p class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui cupiditate omnis modi necessitatibus. Expedita, nulla sed. Minima, quis maxime? Et fugit tempora asperiores facere ea quam, dolor rem reiciendis.
-                    </p>
-                </div>
-            </div>
-
-            <!-- quarta -->
-
-            <div class="card lightblue">
-                <div class="card-content flex">
-                    <i class="fa-solid fa-bullhorn"></i>
-                    <h3>Branding</h3>
-                    <p class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui cupiditate omnis modi necessitatibus. Expedita, nulla sed. Minima, quis maxime? Et fugit tempora asperiores facere ea quam, dolor rem reiciendis.
-                    </p>
-                </div>
-            </div>
-
-
-        </section>
-
-        <!-- seconda sezione -->
-
-        <section class="secondsection container flex">
-            <div class="main-content flex">
-                <div class="planning-img">
-                    <img src="img/planning1.png" alt="planning1">
-                </div>
-                
-                <div class="card-content flex white">
-                    <h3>Stategic Planning</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui cupiditate omnis modi necessitatibus. Expedita, nulla sed. Minima, quis maxime? Et fugit tempora asperiores facere ea quam, dolor rem reiciendis.
-                    </p>
-                </div>
-
-            </div>
-            <div class="card whiteback">
-
-                <div class="card-content flex">
-                    <img src="img/planning2.png"        alt="planning-img-2">
-                    <h3>App Developement</h3>
-                    <p>
-                        <em>
-                        Develope an on-demand app for you deliry business to reach your target customers without any interruption
-                        </em> 
-                    </p>
-
-                    <a class="arrow" href="#">
-                    <i class="fa-solid fa-arrow-down"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- terza sezione -->
-        <section class="thirdsection container flex">
-            <div class="card-content test-title flex">
-
-                <div class="pre-title">TESTIMONIALS</div>
-                <h3 class="real-title">We are committed expert partners</h3>
-
-                <p>
-                    We place huge value on strong relationships and have seen the benefit they bring to our businness. Customer feedback is vital in helping us to get  it right
-                </p>
-
-            </div>
-
-            <div class="card purplish">
-                <div class="main-content flex">
-
-                    <div class="rounded-img">
-                        <img src="img/testimonial1.jpg" alt="">
-                    </div>
-                    <div class="card-content flex">
-                        <p class="white">
-                            <span>
-                                <i class="fa-solid fa-quote-left"></i>
-                            </span>
-                            Develope an on-demand app for you deliry business to reach your target customers without any interruption.
-                            <span>
-                                <i class="fa-solid fa-quote-right"></i>
-                            </span>
-                        </p>
-                        <h3>NAT REYNALD</h3>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="card purplish">
-                <div class="main-content flex">
-
-                    <div class="rounded-img"></div>
-                    <div class="card-content flex">
-                        <p class="white">
-                            <span>
-                                <i class="fa-solid fa-quote-left"></i>
-                            </span>
-                            Develope an on-demand app for you deliry business to reach your target customers without any interruption.
-                            <span>
-                                <i class="fa-solid fa-quote-right"></i>
-                            </span>
-                        </p>
-                        <h3>NAT REYNALD</h3>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="card purplish">
-                <div class="main-content flex">
-
-                    <div class="rounded-img"></div>
-                    <div class="card-content flex">
-                        <p class="white">
-                            <span>
-                                <i class="fa-solid fa-quote-left"></i>
-                            </span>
-                            Develope an on-demand app for you deliry business to reach your target customers without any interruption.
-                            <span>
-                                <i class="fa-solid fa-quote-right"></i>
-                            </span>
-                        </p>
-                        <h3>NAT REYNALD</h3>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </main>
     
 </body>
 
