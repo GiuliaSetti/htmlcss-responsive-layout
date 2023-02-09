@@ -27,6 +27,10 @@ ul{
 
 /* per desktop */
 .container{
+    padding: 0 46px;
+}
+
+.centered{
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -38,6 +42,7 @@ a{
 
 img{
     display: block;
+    height: 100%;
 }
 
 button{
@@ -52,10 +57,13 @@ button{
 header{
     background-color: deepskyblue;
     color: white;
-    padding: 1rem 0.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
 }
 
-header .container{
+header .centered{
     justify-content: space-between;
     align-items: center;
 }
@@ -67,7 +75,7 @@ header .container{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .menu_list{
@@ -88,7 +96,156 @@ header .container{
     font-size: 2em;
 }
 
+/* **************** MAIN ************ */
+
+.main_inner{
+    padding-top: 60px;
+
+    font-size: 14px;
+}
+
+
+/* prima sezione */
+
+.main_inner #features{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main_inner #features p{
+    color: gray;
+    font-weight: bold
+}
+
+.main_inner #features h3{
+    color: deepskyblue;
+    font-size: 20px;
+}
+
+.main_inner #features .feature.col i{
+    font-size: 5rem;
+    color: deepskyblue;
+}
+
+#features .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+
+    padding: 20px;
+
+    background-color: rgba(157, 219, 255, 0.4);
+    border-radius: 20px;
+}
+
+#features .feature.col{
+    text-align: center;
+}
+
+#features .feature .feature_left{
+    flex-direction: column;
+    gap: 30px;
+}
+
+#features .feature button{
+    padding: 10px 30px;
+    background-color: deepskyblue;
+    color: white;
+    font-weight: bold;
+}
+
+#features .feature.col-2{
+    padding-bottom: 0;
+}
+
+#features .feature .feature_image img{
+    height: 300px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+    object-position: bottom;
+}
+
+
+/* planning_______________ */
+
+#planning{
+    margin: 1rem 0;
+    padding: 2rem 0;
+    background-color: #9792e4;
+}
+
+#planning #planning_inner{
+    flex-direction: column;
+    gap: 10px;
+}
+
+#planning_inner .planning_text{
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#planning_inner .planning_card{
+    padding: 1rem 0;
+}
+
+#planning_inner .planning_card.white{
+    background-color: white;
+    border-radius: 20px;
+}
+
+#planning_inner .planning_card.white .planning_text {
+    color: black;
+    text-align: center;
+}
+
+#planning_inner .planning_card.white .planning_text i{
+    padding: 1rem 1.2rem;
+    background-color: #9792e4;
+    border-radius: 50%;
+}
+
+
+#planning_inner .planning_card .planning_image img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************media query************ */
+
 @media screen and (min-width:768px){
+
     .menu_bars{
         display: none;
     }
@@ -96,5 +253,50 @@ header .container{
     .menu_list{
         display: block;
     }
+
+}
+
+
+
+
+@media screen and (min-width:420px){
+    .main_inner #features{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #features .feature.col-2{
+        width: calc(100% / 3 * 2 - (10px / 3 * 1));
+    }
+
+
+    #features .feature.col{
+        width: calc(100% / 3 - (10px / 3 * 2));
+    
+    }
+
+    #features .feature .feature_image img{
+        width: auto;
+        margin: 0;
+        object-fit: initial;
+    }
+
+}
+
+@media screen and (min-width:992px){
+    #features .feature.col-2{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #planning #planning_inner{
+        flex-direction: row;
+    }
+
+    #planning #planning_inner .planning_card.white{
+        align-self: flex-end;
+    }
+
 
 }
