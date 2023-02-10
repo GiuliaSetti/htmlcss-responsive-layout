@@ -6,7 +6,7 @@
 
 .debug *{
 
-    outline: 1px purple solid;
+    /* outline: 1px purple solid; */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,26 +17,13 @@
     height: 100vh;
 }
 
-ul{
+header ul{
     list-style-type: none;
 }
 
-.flex{
-    display: flex;
-}
 
-/* per desktop */
-.container{
-    padding: 0 46px;
-}
-
-.centered{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-a{
+header a,
+main a{
     text-decoration: none;
 }
 
@@ -49,6 +36,31 @@ button{
     border: transparent;
     border-radius: 20px;
 }
+
+
+/* per desktop */
+.container{
+    padding: 0 50px;
+}
+
+.centered{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.purple_btn{
+    padding: 10px 15px;
+    background-color: #9792e4;
+    color: white;
+}
+
+
+.flex{
+    display: flex;
+}
+
 
 /* ***************NAVBAR************** */
 
@@ -180,7 +192,7 @@ header .centered{
 
 #planning #planning_inner{
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 }
 
 #planning_inner .planning_text{
@@ -198,6 +210,7 @@ header .centered{
 #planning_inner .planning_card.white{
     background-color: white;
     border-radius: 20px;
+    padding: 20px;
 }
 
 #planning_inner .planning_card.white .planning_text {
@@ -280,6 +293,151 @@ header .centered{
     font-weight: bold;
 }
 
+/* benefits */
+
+#benefits{
+    margin: 1rem 0;
+    padding: 2rem 0;
+    background-color: #9792e4;
+}
+
+
+.benefits_inner{
+    flex-direction: column;
+    gap: 20px;
+}
+
+#benefits .benefits_content{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#benefits  .benefits_content.col h3{
+    color: #9792e4;
+    font-size: 40px;
+}
+
+#benefits  .benefits_content.col h4{
+    color: #9792e4;
+    font-size: 25px;
+}
+
+#benefits  .benefits_content * {
+    padding: 10px 0;
+}
+
+#benefits .purple_btn{
+    padding: 10px 30px;
+    background-color: #9792e4;
+    color: white;
+}
+
+/* about us */
+
+
+.about_us_content{
+    flex-direction: column;
+    gap: 10px;
+
+    padding-top: 30px;
+}
+
+.about_us_text{
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about_us_text h2{
+    color: #9792e4;
+}
+
+
+.about_us_testimonial{
+    padding: 0 10px;
+    color: #9792e4;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about_us_image img{
+    min-width: 150px;
+    max-width: 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.about_us_image{
+    position: relative;
+}
+
+.about_us_image i{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    font-size: 50px;
+}
+
+
+/* free */
+
+#free{
+    background-color: #9792e4;
+    margin-top: 20px;
+    padding: 30px;
+    color: white;
+}
+
+.free_inner{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.free_inner h2{
+    font-size: 2rem;
+    color: rgb(212, 175, 119);
+}
+
+.free_btn{
+    padding: 10px 40px;
+}
+
+#free ul{
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+
+
+/* footer */
+
+footer{
+    background-color: black;
+    padding-top: 50px;
+}
+
+.footer{
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    gap:50px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -342,16 +500,36 @@ header .centered{
         align-items: flex-start;
     }
 
- 
+    #testimonials .testimonials_cards_content .testimonials_card .testimonials_card_text{
+        text-align: left;
+    }
 
+    #benefits .benefits_inner{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
+    #benefits .benefits_inner .benefits_content.col{
+        width: calc(100% / 2 - 20px);
+    }
 
-
-
+    .about_us_content{
+        flex-direction: row;
+    }
 
 
 
 }
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width:992px){
     #features .feature.col-2{
@@ -367,6 +545,18 @@ header .centered{
     #planning #planning_inner .planning_card.white{
         align-self: flex-end;
     }
+
+    #benefits .benefits_inner{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #benefits .benefits_inner .benefits_content.col{
+        width: calc(100% / 3 - 20px);
+    }
+
+
 
 
 }
